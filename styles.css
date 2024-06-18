@@ -698,6 +698,14 @@ nav {
   padding: 16px 28px;
 }
 
+.menus.landscape {
+  display: flex;
+}
+
+.menus.portrait {
+  display: none;
+}
+
 nav .menus {
   display: flex;
   flex-direction: row;
@@ -710,6 +718,40 @@ nav .menu {
   gap: 1em;
 }
 
+nav .menus.portrait .fab {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1.5em;
+}
+
+nav #menu-portrait {
+  max-height: 0;
+  transition: all 0.2s ease-out;
+  overflow: hidden;
+}
+
+nav #menu-portrait.clicked {
+  max-height: 70vh;
+}
+
+nav .menus.portrait {
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  margin: 1.5em;
+}
+
+nav .menus.portrait .menu {
+  margin: 2px;
+}
+
+nav .menus.portrait .fab,
+nav .menus.portrait a {
+  background-color: var(--color-white);
+}
+
+nav .fab,
 nav .menu a {
   display: flex;
   justify-content: start;
@@ -1085,4 +1127,27 @@ button {
 
 #our-call .bullet {
   max-width: 60ch;
+}
+
+.menus.landscape {
+  display: none;
+}
+
+.menus.portrait {
+  display: flex;
+}
+
+nav {
+  position: absolute;
+}
+
+nav .logos {
+  gap: 0;
+  padding: 1em;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav .logo svg {
+  height: 25px;
 }
