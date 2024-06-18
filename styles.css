@@ -943,6 +943,30 @@ nav .logo svg {
   font-family: var(--font-cinetype-bold);
 }
 
+.nowrap {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.break-word {
+  word-break: break-word;
+}
+
+.no-balance {
+  text-wrap: pretty;
+}
+
+.no-gap {
+  gap: 0;
+}
+.cap {
+  text-transform: uppercase;
+}
+
 body > section {
   padding: 64px 16px;
 }
@@ -1038,26 +1062,27 @@ button {
   width: auto;
 }
 
-.nowrap {
-  flex-wrap: nowrap;
-  white-space: nowrap;
+#our-call .shape svg {
+  height: 170px;
 }
 
-.full-width {
-  width: 100%;
+#our-call .shapes {
+  height: 330px;
+  width: 80vw;
 }
 
-.break-word {
-  word-break: break-word;
+#our-call .shape.s0 {
+  translate: 15% -40%;
 }
 
-.no-balance {
-  text-wrap: pretty;
+#our-call .shape.s1 {
+  translate: -25% -40%;
 }
 
-.no-gap {
-  gap: 0;
+#our-call .shape.s2 {
+  translate: -5% 30%;
 }
-.cap {
-  text-transform: uppercase;
+
+#our-call .bullet {
+  max-width: 60ch;
 }
