@@ -392,6 +392,8 @@ section h1 {
   gap: 4em;
   font-size: var(--fs-500);
   border-radius: 2px;
+  text-align: start;
+  flex: 1 1 0;
 }
 
 #program .areas {
@@ -689,6 +691,18 @@ button:hover {
   text-align: start;
 }
 
+#contact .logos {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+}
+
+#contact .logos .logo {
+  margin: auto;
+}
+
 nav {
   position: fixed;
   display: flex;
@@ -727,13 +741,13 @@ nav .menus.portrait .fab {
   opacity: 0;
 }
 
-nav #menu-portrait  {
+nav #menu-portrait {
   max-height: 0;
   transition: all 0.25s ease-in;
   overflow: hidden;
 }
 
-nav #menu-portrait.clicked  {
+nav #menu-portrait.clicked {
   max-height: 500px;
 }
 
@@ -750,10 +764,8 @@ nav .menus.portrait .menu {
 }
 
 nav .menus.portrait .fab,
-nav .menus.portrait a
- {
+nav .menus.portrait a {
   background-color: var(--color-white);
-
 }
 
 nav .fab,
