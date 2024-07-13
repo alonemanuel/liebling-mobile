@@ -169,6 +169,8 @@ svg {
 #contact {
   --color-back-0: var(--color-white);
   --color-fore-0: var(--color-olive);
+  --color-back-1: var(--color-lime);
+  --color-fore-1: var(--color-olive);
 }
 
 body {
@@ -245,9 +247,9 @@ section h1 {
 }
 
 #mission {
-  font-size: 32px;
   font-family: var(--font-cinetype-bold);
   align-content: start;
+  font-size: 32px;
 }
 
 #mission span {
@@ -539,14 +541,14 @@ section h1 {
   word-break: normal;
 }
 
-#our-call .shapes-outer {
+#mission .shapes-outer {
   flex: 1;
   /* min-height: 450px;
   min-width: 250px;
   position: relative; */
 }
 
-#our-call .shapes {
+#mission .shapes {
   /* flex: 1; */
   height: 500px;
   width: 500px;
@@ -571,7 +573,7 @@ section h1 {
   }
 }
 
-#our-call .shape {
+#mission .shape {
   position: relative;
   text-transform: uppercase;
   position: absolute;
@@ -584,25 +586,25 @@ section h1 {
   height: fit-content;
 }
 
-#our-call .shape.s0 {
+#mission .shape.s0 {
   translate: 110px -80px;
 }
 
-#our-call .shape.s1 {
+#mission .shape.s1 {
   translate: -110px -80px;
 }
 
-#our-call .shape.s2 {
+#mission .shape.s2 {
   translate: 0 110px;
 }
 
-#our-call .shape svg {
+#mission .shape svg {
   max-width: none;
   height: 250px;
   animation: circularMotion 8s infinite linear;
 }
 
-#our-call .text {
+#mission .text {
   position: absolute;
   top: 0;
   left: 0;
@@ -611,6 +613,7 @@ section h1 {
   margin: auto;
   height: fit-content;
   width: fit-content;
+  font-size: 12px;
 }
 
 #program .slots {
@@ -687,12 +690,17 @@ button:hover {
   justify-content: space-between;
 }
 
+#contact button {
+  outline: 1px solid var(--color-fore-0);
+  text-transform: none;
+}
+
 #contact .founder {
   max-width: 20ch;
   text-align: start;
 }
 
-#contact .logos {
+#mission .logos {
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -700,7 +708,7 @@ button:hover {
   gap: 16px;
 }
 
-#contact .logos .logo {
+#mission .logos .logo {
   margin: auto;
 }
 
@@ -1127,24 +1135,24 @@ button {
   width: auto;
 }
 
-#our-call .shape svg {
+#mission .shape svg {
   height: 170px;
 }
 
-#our-call .shapes {
+#mission .shapes {
   height: 330px;
   width: 80vw;
 }
 
-#our-call .shape.s0 {
+#mission .shape.s0 {
   translate: 15% -40%;
 }
 
-#our-call .shape.s1 {
+#mission .shape.s1 {
   translate: -25% -40%;
 }
 
-#our-call .shape.s2 {
+#mission .shape.s2 {
   translate: -5% 30%;
 }
 
