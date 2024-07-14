@@ -163,7 +163,9 @@ svg {
 #application {
   --color-back-0: var(--color-mint);
   --color-fore-0: var(--color-olive);
+  --color-fore-1: var(--color-coal);
   --color-back-1: var(--color-coal);
+  --color-back-2: var(--color-black);
 }
 
 #contact {
@@ -233,6 +235,7 @@ section h1 {
   align-items: center;
   flex-direction: column;
   gap: 16px;
+  flex-basis: 22ch;
 }
 
 #at-glance .box .name {
@@ -675,6 +678,10 @@ button:hover {
   max-width: 60ch;
 }
 
+.w45 {
+  max-width: 45ch;
+}
+
 .w30 {
   max-width: 30ch;
 }
@@ -697,7 +704,7 @@ button:hover {
 }
 
 #contact .founder {
-  max-width: 20ch;
+  width: 20ch;
   text-align: start;
 }
 
@@ -711,6 +718,10 @@ button:hover {
 
 #mission .logos .logo {
   margin: auto;
+}
+
+#mission .logos .logo svg {
+  height: 45px;
 }
 
 nav {
@@ -918,8 +929,77 @@ nav .logo svg {
   color: var(--color-back-0);
 }
 
-#application h3 {
-  font-size: var(--fs-800);
+#application .boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+#application button {
+  border: 1px var(--color-fore-0) solid;
+  background-color: var(--color-back-0);
+}
+
+#application .boxes .check.checked {
+  display: none;
+}
+
+#application #checkboxes input[type="checkbox"] {
+  display: none;
+}
+
+#application #checkboxes input[type="checkbox"]:checked + .box {
+  background-color: var(--color-fore-1);
+  color: var(--color-back-0);
+}
+
+#application #checkboxes input[type="checkbox"]:checked + .box .name {
+  color: var(--color-back-0);
+}
+
+#application #checkboxes input[type="checkbox"]:checked + .box .check.checked {
+  /* background-color: var(--color-back-2); */
+  display: unset;
+}
+
+#application
+  #checkboxes
+  input[type="checkbox"]:checked
+  + .box
+  .check.unchecked {
+  /* background-color: var(--color-back-2); */
+  display: none;
+}
+
+#application .box {
+  padding: 1em;
+  /* background-color: var(--color-back-1); */
+  border: 1px var(--color-back-1) solid;
+  border-radius: 2px;
+  color: var(--color-fore-1);
+  font-size: var(--fs-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: 100px;
+  width: 30ch;
+}
+
+#application .box .name {
+  font-family: var(--font-cinetype-bold);
+  /* font-size: var(--fs-700); */
+  color: var(--color-fore-0);
+  align-self: flex-start;
+}
+
+#application .box .check {
+  /* width: 30px;
+  height: 30px; */
+  flex-shrink: 0;
+  align-self: flex-end;
 }
 
 #application .carousel {
