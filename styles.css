@@ -601,6 +601,7 @@ section h1 {
 #mission .shape svg {
   max-width: none;
   height: 250px;
+  width: fit-content;
   animation: circularMotion 8s infinite linear;
 }
 
@@ -806,6 +807,7 @@ nav .logos {
   background-color: var(--color-white-alpha);
   align-self: flex-start;
   transition: all 0.15s ease-out;
+  flex-wrap: nowrap;
 }
 
 nav .logos:hover {
@@ -1145,11 +1147,11 @@ button {
 }
 
 #mission .shape.s0 {
-  translate: 15% -40%;
+  translate: 40% -45%;
 }
 
 #mission .shape.s1 {
-  translate: -25% -40%;
+  translate: -50% -45%;
 }
 
 #mission .shape.s2 {
